@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">导盲犬</string>
+
+    <string name="permission_camera">相机权限</string>
+    <string name="permission_camera_desc">用于拍摄和识别周围环境</string>
+
+    <string name="permission_location">定位权限</string>
+    <string name="permission_location_desc">用于获取精确位置，提供导航服务</string>
+
+    <string name="permission_microphone">麦克风权限</string>
+    <string name="permission_microphone_desc">用于语音指令和环境声音识别</string>
+
+    <string name="permission_notification">通知权限</string>
+    <string name="permission_notification_desc">用于发送导航提醒和系统通知</string>
+
+    <string name="permissions_needed">需要授权必要权限以使用全部功能</string>
+    <string name="permissions_all_granted">所有必要权限已授权</string>
+
+    <string name="request_permissions">申请权限</string>
+    <string name="request_permissions_desc">申请必要权限按钮，点击后弹出权限申请对话框</string>
+
+    <string name="test_tts">测试语音播报</string>
+    <string name="test_tts_desc">测试语音播报按钮，点击后播放测试语音</string>
+
+    <string name="tts_test_content">导盲犬语音播报测试成功</string>
+
+    <string name="tts_not_ready">语音引擎初始化中，请稍候</string>
+    <string name="tts_ready">语音播报已就绪</string>
+    <string name="gesture_hint">单击开启识物，双击开启导航，长按唤醒语音</string>
+
+    <string name="speed_up">加速</string>
+    <string name="speed_up_desc">加快语音播报速度</string>
+
+    <string name="speed_down">减速</string>
+    <string name="speed_down_desc">减慢语音播报速度</string>
+
+    <string name="stop_tts">停止播报</string>
+    <string name="stop_tts_desc">停止当前语音播报</string>
+
+    <string name="main_function_area">主功能区</string>
+    <string name="main_function_desc">单击执行当前功能，双击切换功能，长按退出应用</string>
+
+    <string name="function_navigation">导航模式</string>
+    <string name="function_navigation_desc">导航模式，单击开始导航，双击切换到识别模式，长按退出</string>
+
+    <string name="function_recognition">识别模式</string>
+    <string name="function_recognition_desc">识别模式，单击开始识别，双击切换到导航模式，长按退出</string>
+
+    <string name="function_settings">设置模式</string>
+    <string name="function_settings_desc">设置模式，单击进入设置，双击切换功能，长按退出</string>
+
+    <string name="gesture_hint">使用提示：单击执行，双击切换，长按退出</string>
+
+    <string name="function_switched">已切换到</string>
+
+    <string name="exit_confirm">长按退出应用</string>
+    <string name="app_exit">应用即将退出</string>
+
+    <string name="speed_down_announce">语速减慢</string>
+    <string name="speed_up_announce">语速加快</string>
+    <string name="current_speed">当前语速</string>
+    <string name="speed_unit">倍</string>
+
+    <string name="click_feedback">点击</string>
+    <string name="double_click_feedback">双击</string>
+    <string name="long_press_feedback">长按</string>
+
+    <string name="camera_activity_title">识物模式</string>
+    <string name="camera_starting">相机启动中...</string>
+    <string name="camera_ready">相机已就绪</string>
+    <string name="camera_not_ready">相机未就绪</string>
+    <string name="camera_error">相机启动失败</string>
+    <string name="camera_not_granted">未授予相机权限</string>
+
+    <string name="switch_camera">切换摄像头</string>
+    <string name="switch_camera_desc">切换前置或后置摄像头</string>
+    <string name="camera_back">后置摄像头</string>
+    <string name="camera_front">前置摄像头</string>
+
+    <string name="toggle_torch">闪光灯</string>
+    <string name="toggle_torch_desc">开启或关闭闪光灯</string>
+    <string name="torch_on">闪光灯已开启</string>
+    <string name="torch_off">闪光灯已关闭</string>
+
+    <string name="close_camera">关闭相机</string>
+    <string name="close_camera_desc">关闭相机并返回首页</string>
+    <string name="camera_closed">相机已关闭</string>
+
+    <string name="recognition_start">开始识别</string>
+    <string name="recognition_stop">停止识别</string>
+    <string name="recognition_running">正在识别中</string>
+    <string name="start_recognition">开始识物</string>
+    <string name="start_recognition_desc">点击开始图像识别，识别周围物体</string>
+    <string name="stop_recognition">停止识物</string>
+    <string name="stop_recognition_desc">点击停止图像识别</string>
+    <string name="recognition_started">识物已开启</string>
+    <string name="recognition_stopped">识物已关闭</string>
+    <string name="recognition_error">识别错误：%1$s</string>
+    <string name="recognition_camera_not_ready">相机未就绪，无法开启识别</string>
+    <string name="recognition_mode_online">在线模式</string>
+    <string name="recognition_mode_offline">离线模式</string>
+    <string name="recognition_mode_switched">已切换至%1$s</string>
+    <string name="recognition_offline_unavailable">离线模型未就绪，请检查模型文件</string>
+
+    <string name="speech_listening">正在监听语音指令</string>
+    <string name="speech_started">语音识别已开启</string>
+    <string name="speech_stopped">语音识别已关闭</string>
+    <string name="speech_error">语音识别出错，正在重试</string>
+    <string name="speech_model_not_found">语音模型未找到</string>
+    <string name="speech_channel_name">语音识别服务</string>
+    <string name="speech_channel_desc">导盲犬语音识别后台服务</string>
+    <string name="speech_last_command">最近指令：%s</string>
+
+    <string name="start_speech">语音控制</string>
+    <string name="start_speech_desc">开启或关闭语音识别</string>
+    <string name="stop_speech">关闭语音</string>
+    <string name="stop_speech_desc">关闭语音识别服务</string>
+
+    <string name="command_navigate">导航指令</string>
+    <string name="command_recognize">识别指令</string>
+    <string name="command_settings">设置指令</string>
+    <string name="command_switch_camera">切换摄像头指令</string>
+    <string name="command_torch">闪光灯指令</string>
+    <string name="command_close">退出指令</string>
+    <string name="command_stop">停止指令</string>
+    <string name="command_speed_up">加速指令</string>
+    <string name="command_speed_down">减速指令</string>
+    <string name="command_repeat">重复指令</string>
+    <string name="command_help">帮助指令</string>
+    <string name="command_destination">目的地：%s</string>
+    <string name="command_unknown">未识别指令</string>
+
+    <string name="help_text">您可以说：导航、识别、设置、切换摄像头、开灯、关灯、快一点、慢一点、退出、帮助</string>
+</resources>

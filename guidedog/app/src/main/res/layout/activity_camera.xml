@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".view.CameraActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/camera_activity_title"
+        android:importantForAccessibility="yes"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/camera_ready"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_size_body"
+        android:background="@color/background"
+        android:paddingStart="@dimen/padding_medium"
+        android:paddingEnd="@dimen/padding_medium"
+        android:paddingTop="@dimen/padding_small"
+        android:paddingBottom="@dimen/padding_small"
+        android:contentDescription="@string/camera_ready"
+        android:importantForAccessibility="yes"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/margin_large" />
+
+    <LinearLayout
+        android:id="@+id/layoutBottomControls"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="@dimen/padding_medium">
+
+        <Button
+            android:id="@+id/btnToggleRecognition"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/start_recognition"
+            android:textColor="@color/button_text"
+            android:textSize="@dimen/text_size_button"
+            android:backgroundTint="@color/button_primary"
+            android:contentDescription="@string/start_recognition_desc"
+            android:importantForAccessibility="yes"
+            android:layout_marginBottom="@dimen/padding_medium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSwitchCamera"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:text="@string/switch_camera"
+                android:textColor="@color/button_text"
+                android:textSize="@dimen/text_size_button"
+                android:backgroundTint="@color/button_background"
+                android:contentDescription="@string/switch_camera_desc"
+                android:importantForAccessibility="yes"
+                android:layout_marginEnd="@dimen/margin_small" />
+
+            <Button
+                android:id="@+id/btnToggleTorch"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:text="@string/toggle_torch"
+                android:textColor="@color/button_text"
+                android:textSize="@dimen/text_size_button"
+                android:backgroundTint="@color/button_background"
+                android:contentDescription="@string/toggle_torch_desc"
+                android:importantForAccessibility="yes"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_small" />
+
+            <Button
+                android:id="@+id/btnCloseCamera"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:text="@string/close_camera"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/text_size_button"
+                android:backgroundTint="@color/error"
+                android:contentDescription="@string/close_camera_desc"
+                android:importantForAccessibility="yes"
+                android:layout_marginStart="@dimen/margin_small" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

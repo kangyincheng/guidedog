@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="@dimen/padding_medium"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_size_title"
+        android:textStyle="bold"
+        android:contentDescription="@string/app_name"
+        android:importantForAccessibility="yes"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/margin_large" />
+
+    <TextView
+        android:id="@+id/tvCurrentFunction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/function_navigation"
+        android:textColor="@color/accent"
+        android:textSize="@dimen/text_size_body"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:contentDescription="@string/function_navigation"
+        android:importantForAccessibility="yes"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/margin_medium" />
+
+    <Button
+        android:id="@+id/btnMainFunction"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/function_navigation"
+        android:textColor="@color/button_text"
+        android:textSize="@dimen/text_size_giant"
+        android:textStyle="bold"
+        android:backgroundTint="@color/button_background"
+        android:contentDescription="@string/function_navigation_desc"
+        android:importantForAccessibility="yes"
+        app:layout_constraintTop_toBottomOf="@id/tvCurrentFunction"
+        app:layout_constraintBottom_toTopOf="@id/tvGestureHint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_large" />
+
+    <TextView
+        android:id="@+id/tvGestureHint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/gesture_hint"
+        android:textColor="@color/text_secondary"
+        android:textSize="@dimen/text_size_body"
+        android:gravity="center"
+        android:contentDescription="@string/gesture_hint"
+        android:importantForAccessibility="yes"
+        app:layout_constraintBottom_toTopOf="@id/layoutBottomControls"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_large" />
+
+    <LinearLayout
+        android:id="@+id/layoutBottomControls"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium">
+
+        <Button
+            android:id="@+id/btnToggleSpeech"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/start_speech"
+            android:textColor="@color/button_text"
+            android:textSize="@dimen/text_size_button"
+            android:backgroundTint="@color/accent"
+            android:contentDescription="@string/start_speech_desc"
+            android:importantForAccessibility="yes"
+            android:layout_marginBottom="@dimen/margin_small" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSpeedDown"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:text="@string/speed_down"
+                android:textColor="@color/button_text"
+                android:textSize="@dimen/text_size_button"
+                android:backgroundTint="@color/button_background"
+                android:contentDescription="@string/speed_down_desc"
+                android:importantForAccessibility="yes"
+                android:layout_marginEnd="@dimen/margin_small" />
+
+            <Button
+                android:id="@+id/btnSpeedUp"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:text="@string/speed_up"
+                android:textColor="@color/button_text"
+                android:textSize="@dimen/text_size_button"
+                android:backgroundTint="@color/button_background"
+                android:contentDescription="@string/speed_up_desc"
+                android:importantForAccessibility="yes"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_small" />
+
+            <Button
+                android:id="@+id/btnStopTts"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:text="@string/stop_tts"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/text_size_button"
+                android:backgroundTint="@color/error"
+                android:contentDescription="@string/stop_tts_desc"
+                android:importantForAccessibility="yes"
+                android:layout_marginStart="@dimen/margin_small" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
