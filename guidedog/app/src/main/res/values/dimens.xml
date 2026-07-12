@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_title">40sp</dimen>
+    <dimen name="text_size_body">32sp</dimen>
+    <dimen name="text_size_button">36sp</dimen>
+    <dimen name="text_size_small">24sp</dimen>
+    <dimen name="text_size_giant">48sp</dimen>
+
+    <dimen name="button_height">160dp</dimen>
+    <dimen name="button_height_giant">240dp</dimen>
+    <dimen name="button_min_width">300dp</dimen>
+
+    <dimen name="padding_small">12dp</dimen>
+    <dimen name="padding_medium">24dp</dimen>
+    <dimen name="padding_large">32dp</dimen>
+    <dimen name="padding_extra_large">48dp</dimen>
+
+    <dimen name="margin_small">12dp</dimen>
+    <dimen name="margin_medium">24dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_extra_large">64dp</dimen>
+</resources>

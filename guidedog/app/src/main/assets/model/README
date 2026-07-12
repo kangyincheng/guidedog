@@ -1,0 +1,18 @@
+Vosk中文轻量语音识别模型
+============================
+
+请从Vosk官方模型库下载中文轻量模型，解压后放入此目录：
+
+下载地址：https://alphacephei.com/vosk/models
+推荐模型：vosk-model-small-cn-0.22（约42MB）
+
+解压后的文件结构应为：
+  assets/model/
+    am/
+    conf/
+    graph/
+    ivector/
+    README
+```
+
+完成后运行项目即可使用离线语音识别功能。
